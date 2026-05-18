@@ -1,0 +1,175 @@
+/* Jilani CRM Theme */
+[data-theme='jilani'] {
+  /* --background: #fafafa; */
+  /* --foreground: #111827; */
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0 0 0);
+  /* --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827; */
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0 0 0);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0 0 0);
+
+  --primary: #8c6c36;
+  /* Deep Bronze for text */
+  /* --primary-foreground: oklch(1 0 0); */
+  /* --primary: oklch(0 0 0); */
+  --primary-foreground: oklch(1 0 0);
+  /* --primary-foreground: #ffffff; */
+  /* --secondary: #6B7280;
+  --secondary-foreground: #ffffff; */
+  --secondary: oklch(0.94 0 0);
+  --secondary-foreground: oklch(0 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.44 0 0);
+  --accent: oklch(0.94 0 0);
+  --accent-foreground: oklch(0 0 0);
+  /* --muted: #f3f4f6;
+  --muted-foreground: #6B7280;
+  --accent: #f9fafb;
+  --accent-foreground: #111827; */
+  --destructive: #991b1b;
+  --destructive-foreground: #ffffff;
+  /* --border: #e5e7eb;
+  --input: #e5e7eb; */
+  --border: oklch(0.92 0 0);
+  --input: oklch(0.94 0 0);
+  --ring: oklch(0 0 0);
+  /* --ring: #C5A059; */
+  /* Champagne Gold */
+
+  --chart-1: #c5a059;
+  /* Champagne Gold */
+  --chart-2: #1f2937;
+  /* Dark Slate */
+  --chart-3: #8c6c36;
+  /* Deep Bronze */
+  --chart-4: #d1d5db;
+  /* Cool Gray */
+  --chart-5: #f3f4f6;
+  /* Light Gray */
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #8c6c36;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f3f4f6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #c5a059;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-manrope);
+
+  /* Very subtle rounding for an architectural feel */
+  --radius: 0.25rem;
+
+  /* Premium Ambient Shadows */
+  /* --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.06); */
+
+  --shadow-x: 0px;
+  --shadow-y: 1px;
+  --shadow-blur: 2px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.18;
+  --shadow-color: hsl(0 0% 0%);
+  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
+  --shadow-xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px -1px rgba(0, 0, 0, 0.06);
+  --shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 2px 4px -1px hsl(0 0% 0% / 0.18);
+  --shadow-lg: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 4px 6px -1px hsl(0 0% 0% / 0.18);
+  --shadow-xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 8px 10px -1px hsl(0 0% 0% / 0.18);
+  --shadow-2xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.45);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+[data-theme='jilani'].dark {
+  --background: #121212;
+  --foreground: #f9fafb;
+  --card: #1a1a1a;
+  --card-foreground: #f9fafb;
+  --popover: #1a1a1a;
+  --popover-foreground: #f9fafb;
+  --primary: #c5a059;
+  /* Champagne Gold for text on dark */
+  --primary-foreground: #121212;
+  --secondary: #9ca3af;
+  --secondary-foreground: #111827;
+  --muted: #27272a;
+  --muted-foreground: #9ca3af;
+  --accent: #27272a;
+  --accent-foreground: #f9fafb;
+  --destructive: #ef4444;
+  --destructive-foreground: #121212;
+  --border: #3f3f46;
+  --input: #3f3f46;
+  --ring: #c5a059;
+
+  --sidebar: #121212;
+  --sidebar-foreground: #f9fafb;
+  --sidebar-primary: #c5a059;
+  --sidebar-primary-foreground: #121212;
+  --sidebar-accent: #27272a;
+  --sidebar-accent-foreground: #f9fafb;
+  --sidebar-border: #3f3f46;
+  --sidebar-ring: #c5a059;
+}
+
+[data-theme='jilani'] {
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+
+    --font-sans: var(--font-sans);
+    --font-heading: var(--font-heading);
+
+    --radius-sm: calc(var(--radius) - 2px);
+    --radius-md: var(--radius);
+    --radius-lg: calc(var(--radius) + 4px);
+    --radius-xl: calc(var(--radius) + 8px);
+
+    --shadow-sm: var(--shadow-sm);
+    --shadow-md: var(--shadow-md);
+    --shadow-lg: var(--shadow-lg);
+  }
+}

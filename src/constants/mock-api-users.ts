@@ -26,7 +26,7 @@ export const fakeUsers = {
   initialize() {
     const sampleUsers: User[] = [];
     function generateRandomUserData(id: number): User {
-      const roles = ['Developer', 'Designer', 'Manager', 'QA', 'DevOps', 'Product Owner'];
+      const roles = ['Administrator', 'Head of Sales', 'Marketing Manager', 'Manager', 'Agent'];
       const statuses = ['Active', 'Inactive', 'Invited'];
 
       return {

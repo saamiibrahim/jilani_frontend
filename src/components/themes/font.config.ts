@@ -12,7 +12,8 @@ import {
   Playfair_Display,
   Noto_Sans_Mono,
   Outfit,
-  Space_Mono
+  Space_Mono,
+  Manrope
 } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
@@ -45,6 +46,11 @@ const fontMullish = Mulish({
 const fontInter = Inter({
   subsets: ['latin'],
   variable: '--font-inter'
+});
+
+const fontManrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope'
 });
 
 const fontArchitectsDaughter = Architects_Daughter({
@@ -104,5 +110,6 @@ export const fontVariables = cn(
   fontSpaceMono.variable,
   fontJetBrainsMono.variable,
   fontMerriweather.variable,
-  fontPlayfairDisplay.variable
+  fontPlayfairDisplay.variable,
+  fontManrope.variable
 );

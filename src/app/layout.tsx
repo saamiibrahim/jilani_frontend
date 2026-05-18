@@ -16,8 +16,8 @@ const META_THEME_COLORS = {
 };
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'Jilani Properties CRM',
+  description: 'Lead Management CRM for Jilani Properties'
 };
 
 export const viewport: Viewport = {
